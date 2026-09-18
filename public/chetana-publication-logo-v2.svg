@@ -1,0 +1,58 @@
+<svg width="588" height="454" viewBox="0 0 588 454" xmlns="http://www.w3.org/2000/svg">
+  <!-- CHETANA PUBLICATION — refined logo -->
+  <!-- Transparent background (no grid/texture) -->
+
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E1A4"/>
+      <stop offset="50%" stop-color="#D8B662"/>
+      <stop offset="100%" stop-color="#C89B4A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Open book outline, thicker and more prominent -->
+  <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- left page -->
+    <path d="M 205 120
+             L 205 248
+             C 205 248, 250 220, 294 260"/>
+    <!-- right page -->
+    <path d="M 383 120
+             L 383 248
+             C 383 248, 338 220, 294 260"/>
+    <!-- top left curve into spine -->
+    <path d="M 205 120
+             C 245 100, 270 118, 294 148"/>
+    <!-- top right curve into spine -->
+    <path d="M 383 120
+             C 343 100, 318 118, 294 148"/>
+  </g>
+
+  <!-- CP monogram inside the book -->
+  <text x="294" y="205"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="72"
+        font-weight="700"
+        fill="url(#gold)">CP</text>
+
+  <!-- CHETANA -->
+  <text x="294" y="330"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="56"
+        font-weight="700"
+        letter-spacing="2"
+        fill="url(#gold)">CHETANA</text>
+
+  <!-- PUBLICATION - thicker, bolder, more prominent -->
+  <text x="294" y="370"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="30"
+        font-weight="900"
+        letter-spacing="10"
+        fill="url(#gold)"
+        stroke="url(#gold)"
+        stroke-width="0.8">PUBLICATION</text>
+</svg>
