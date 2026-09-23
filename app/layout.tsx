@@ -127,6 +127,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta name="google-site-verification" content="5-QNmJtFZYXWkRiRcDefTxtxYDAJ8iwzHBQTdN1g9Qw" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
