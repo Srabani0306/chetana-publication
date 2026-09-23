@@ -160,9 +160,8 @@ export const AUTHORS: Author[] = [
 ];
 
 export const TIMELINE: TimelineItem[] = [
-  { year: "1982", text: "Chetana Publication founded in Sundargarh with a single printing press and four titles." },
-  { year: "1985", text: "First state-board textbook contract awarded — the beginning of our education division." },
-  { year: "1998", text: "Expanded into fiction and poetry, publishing a new generation of Odia writers." },
+  { year: "1990", text: "Chetana Publication founded in Sundargarh with a single printing press and four titles." },
+ 
   { year: "2010", text: "Digitised our full backlist and opened a public catalogue for schools and libraries." },
   { year: "2011", text: "Began government printing works — forms, registers and publicity material for district offices." },
   { year: "2015", text: "Installed large-format flex printing; now producing banners and hoardings for government schemes." },
