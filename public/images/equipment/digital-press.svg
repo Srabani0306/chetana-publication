@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#EEE2C4"/>
+  <circle cx="330" cy="60" r="90" fill="#B4863A" opacity=".18"/>
+  <circle cx="60" cy="280" r="70" fill="#B4863A" opacity=".14"/>
+  <rect x="110" y="110" width="180" height="160" rx="10" fill="#2A1F14"/><rect x="130" y="130" width="80" height="30" rx="4" fill="#1C8FB8"/><rect x="290" y="190" width="50" height="10" fill="#fbf7ec"/><rect x="290" y="205" width="50" height="10" fill="#fbf7ec"/><rect x="130" y="230" width="140" height="10" fill="#5B4E3D"/>
+  <text x="200" y="40" text-anchor="middle" font-family="monospace" font-size="13" fill="#5B4E3D" letter-spacing="2">DIGITAL PRESS — ADD PHOTO</text>
+</svg>

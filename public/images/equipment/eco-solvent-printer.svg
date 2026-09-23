@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#EEE2C4"/>
+  <circle cx="330" cy="60" r="90" fill="#1F4A45" opacity=".18"/>
+  <circle cx="60" cy="280" r="70" fill="#1F4A45" opacity=".14"/>
+  <rect x="80" y="130" width="240" height="60" rx="10" fill="#2A1F14"/><rect x="100" y="190" width="200" height="70" fill="#fbf7ec"/><rect x="100" y="190" width="200" height="70" fill="#1C8FB8" opacity=".6"/><circle cx="110" cy="160" r="6" fill="#4ade80"/>
+  <text x="200" y="40" text-anchor="middle" font-family="monospace" font-size="13" fill="#5B4E3D" letter-spacing="2">ECO-SOLVENT PRINTER — ADD PHOTO</text>
+</svg>

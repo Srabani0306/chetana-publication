@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#EEE2C4"/>
+  <circle cx="330" cy="60" r="90" fill="#9C3B26" opacity=".18"/>
+  <circle cx="60" cy="280" r="70" fill="#9C3B26" opacity=".14"/>
+  <rect x="60" y="120" width="280" height="50" rx="8" fill="#2A1F14"/><rect x="80" y="170" width="240" height="90" fill="#fbf7ec"/><rect x="80" y="170" width="150" height="90" fill="#C2327A" opacity=".8"/><rect x="215" y="160" width="30" height="12" fill="#1C8FB8"/><rect x="70" y="260" width="8" height="30" fill="#2A1F14"/><rect x="322" y="260" width="8" height="30" fill="#2A1F14"/>
+  <text x="200" y="40" text-anchor="middle" font-family="monospace" font-size="13" fill="#5B4E3D" letter-spacing="2">FLEX PRINTER — ADD PHOTO</text>
+</svg>

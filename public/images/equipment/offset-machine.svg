@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#EEE2C4"/>
+  <circle cx="330" cy="60" r="90" fill="#5B4632" opacity=".18"/>
+  <circle cx="60" cy="280" r="70" fill="#5B4632" opacity=".14"/>
+  <rect x="70" y="140" width="260" height="120" rx="10" fill="#2A1F14"/><circle cx="140" cy="200" r="34" fill="#B4863A"/><circle cx="220" cy="200" r="34" fill="#B4863A"/><circle cx="140" cy="200" r="10" fill="#2A1F14"/><circle cx="220" cy="200" r="10" fill="#2A1F14"/><rect x="270" y="160" width="40" height="80" fill="#fbf7ec"/>
+  <text x="200" y="40" text-anchor="middle" font-family="monospace" font-size="13" fill="#5B4E3D" letter-spacing="2">OFFSET MACHINE — ADD PHOTO</text>
+</svg>

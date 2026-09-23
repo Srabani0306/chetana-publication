@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#EEE2C4"/>
+  <circle cx="330" cy="60" r="90" fill="#1C8FB8" opacity=".18"/>
+  <circle cx="60" cy="280" r="70" fill="#1C8FB8" opacity=".14"/>
+  <rect x="80" y="160" width="160" height="70" rx="8" fill="#2A1F14"/><rect x="100" y="140" width="120" height="20" fill="#B4863A"/><rect x="260" y="130" width="60" height="100" fill="#fbf7ec" stroke="#2A1F14" stroke-width="4"/><g fill="#2A1F14"><circle cx="260" cy="145" r="4"/><circle cx="260" cy="160" r="4"/><circle cx="260" cy="175" r="4"/><circle cx="260" cy="190" r="4"/><circle cx="260" cy="205" r="4"/><circle cx="260" cy="220" r="4"/></g>
+  <text x="200" y="40" text-anchor="middle" font-family="monospace" font-size="13" fill="#5B4E3D" letter-spacing="2">LAMINATION & BINDING — ADD PHOTO</text>
+</svg>
