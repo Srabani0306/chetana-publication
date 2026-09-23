@@ -5,7 +5,7 @@
 
 export const SITE = {
   // TODO: replace with your real domain once it is live (or set NEXT_PUBLIC_SITE_URL).
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.chetanapublication.in",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://chetana-publication.vercel.app/",
   name: "Chetana Publication",
   alias: "Saransha",
   tagline: "Flex Printing, Publication & Government Printing Works",
