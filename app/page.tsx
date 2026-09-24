@@ -43,7 +43,7 @@ export default function Home() {
           </p>
           <div className="cp-hero-actions cp-rise" style={{ "--delay": "460ms" } as React.CSSProperties}>
             <Link className="cp-btn cp-btn-primary" href="/about">
-              Our workkk &amp; equipment <ArrowRight size={15} strokeWidth={2} />
+              Our work &amp; equipment <ArrowRight size={15} strokeWidth={2} />
             </Link>
             <Link className="cp-btn cp-btn-ghost" href="/proprietor">
               <UserRound size={15} strokeWidth={2} /> Meet the proprietor
