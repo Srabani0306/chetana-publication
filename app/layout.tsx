@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: `${SITE.name} (${SITE.alias})`,
     title: `${SITE.name} (${SITE.alias}) — Flex Printing & Govt. Works since ${SITE.govtSince}`,
     description,
-    images: [{ url: "/logo.png", alt: `${SITE.name} logo` }],
+    images: [{ url: "/images/logo/chetana-publications-monogram-cp.png", alt: `${SITE.name} logo` }],
   },
   twitter: {
     card: "summary",
