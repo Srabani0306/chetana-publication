@@ -7,7 +7,7 @@ export const SITE = {
   // TODO: replace with your real domain once it is live (or set NEXT_PUBLIC_SITE_URL).
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://chetana-publication.vercel.app/",
   name: "Chetana Publication",
-  alias: "Saransha",
+  alias: "R.K Nayak",
   tagline: "Printing , Flex Printing, Publication & Government Printing Works",
   govtSince: 1990,
   city: "Sundargarh",
@@ -36,8 +36,8 @@ export const PROPRIETOR = {
   experience: `${new Date().getFullYear() - SITE.govtSince}+ years in government printing works`,
   message: [
     "Namaskar. When I started this work, I had one simple goal — whatever leaves our press with our name on it must be correct, clean, and delivered on the day it was promised.",
-    "For more than fifteen years we have carried out printing works for government departments, district offices, schools and institutions across Odisha — flex banners, hoardings, official forms, registers, textbooks and publicity material. Every order, big or small, gets the same care.",
-    "Our team and machines are ready for large-format flex printing, offset printing, binding and finishing under one roof, so our clients never have to run from shop to shop. Thank you to every department and customer who has trusted Chetana Publication and Saransha. We look forward to serving you.",
+    "For more than Thirtysix years we have carried out printing works for government departments, district offices, schools and institutions across Odisha — flex banners, hoardings, official forms, registers, textbooks and publicity material. Every order, big or small, gets the same care.",
+    "Our team and machines are ready for Printing, large-format flex printing, offset printing, binding and finishing under one roof, so our clients never have to run from shop to shop. Thank you to every department and customer who has trusted Chetana Publication. We look forward to serving you.",
   ],
 };
 
