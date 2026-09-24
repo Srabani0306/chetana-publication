@@ -20,7 +20,7 @@ export const SITE = {
     country: "IN",
   },
   // TODO: replace with your real phone number and email.
-  phone: "+91 671 234 5678",
+  phone: "+91 7978045966",
   email: "rknayak.saransha@gmail.com",
   hours: "Mon–Sat, 10:00–19:00",
 };
