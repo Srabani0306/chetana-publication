@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Briefcase, Clock, Mail, MapPin, Phone, Quote } from "lucide-react";
-import { PROPRIETOR, SITE } from "../site-config";
+import { Briefcase, Clock, Mail, MapPin, Phone, Quote, Users } from "lucide-react";
+import { CO_FOUNDER, PROPRIETOR, SITE } from "../site-config";
 import { Eyebrow } from "../components/Primitives";
 import { Reveal } from "../components/Motion";
 
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     url: "/proprietor",
     title: `${PROPRIETOR.name} — ${PROPRIETOR.role}, ${SITE.name} (${SITE.alias})`,
     images: [{ url: PROPRIETOR.image, alt: PROPRIETOR.name }],
+    description: `${PROPRIETOR.name} (${PROPRIETOR.role}) and ${CO_FOUNDER.name} (${CO_FOUNDER.role}) of ${SITE.name}, ${SITE.city}.`,
   },
 };
 
@@ -22,6 +23,7 @@ export default function ProprietorPage() {
 
   const details = [
     { Icon: Briefcase, label: "Business", value: `${SITE.name} (${SITE.alias})` },
+    { Icon: Users, label: CO_FOUNDER.role, value: CO_FOUNDER.name },
     { Icon: MapPin, label: "Address", value: PROPRIETOR.address },
     { Icon: Phone, label: "Phone", value: PROPRIETOR.phone, href: `tel:${PROPRIETOR.phone.replace(/\s/g, "")}` },
     { Icon: Mail, label: "Email", value: PROPRIETOR.email, href: `mailto:${PROPRIETOR.email}` },
@@ -59,6 +61,8 @@ export default function ProprietorPage() {
           </h1>
           <p className="cp-prop-role cp-rise" style={{ "--delay": "200ms" } as React.CSSProperties}>
             {PROPRIETOR.role} · {SITE.name} · {SITE.alias}
+            <br />
+            with {CO_FOUNDER.role} {CO_FOUNDER.name}
           </p>
           <div className="cp-prop-details">
             {details.map(({ Icon, label, value, href }, i) => (
@@ -84,7 +88,7 @@ export default function ProprietorPage() {
         {PROPRIETOR.message.map((para) => (
           <p key={para.slice(0, 24)}>{para}</p>
         ))}
-        <div className="cp-prop-sign">— {PROPRIETOR.name}</div>
+        <div className="cp-prop-sign">— {PROPRIETOR.name} &amp; {CO_FOUNDER.name}</div>
       </Reveal>
     </div>
   );

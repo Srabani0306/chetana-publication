@@ -27,7 +27,7 @@ export const SITE = {
 
 export const PROPRIETOR = {
   name: "Rama Krishna Nayak",
-  role: "Proprietor",
+  role: "Founder & Proprietor",
   // Replace public/images/proprietor.svg with a real photo (e.g. proprietor.jpg) and update this path.
   image: "/images/rk.jpg",
   address: "L-231, R.R.I.T Colony, Sundargarh, Odisha – 770002",
@@ -39,6 +39,11 @@ export const PROPRIETOR = {
     "For more than Thirtysix years we have carried out printing works for government departments, district offices, schools and institutions across Odisha — flex banners, hoardings, official forms, registers, textbooks and publicity material. Every order, big or small, gets the same care.",
     "Our team and machines are ready for Printing, large-format flex printing, offset printing, binding and finishing under one roof, so our clients never have to run from shop to shop. Thank you to every department and customer who has trusted Chetana Publication. We look forward to serving you.",
   ],
+};
+
+export const CO_FOUNDER = {
+  name: "Mrs. Sarojini Mohanty",
+  role: "Co-Founder",
 };
 
 export type Equipment = {

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Landmark, Printer, Users } from "lucide-react";
 import { TIMELINE } from "../data";
-import { EQUIPMENT, PROPRIETOR, SITE } from "../site-config";
+import { CO_FOUNDER, EQUIPMENT, PROPRIETOR, SITE } from "../site-config";
 import { JsonLd, SectionHeading } from "../components/Primitives";
 import { Reveal } from "../components/Motion";
 
@@ -43,11 +43,11 @@ export default function AboutPage() {
         <Reveal>
           <p className="cp-lead">
             {SITE.name}, also known as {SITE.alias}, is a printing and publishing house in{" "}
-            {SITE.city}, {SITE.state}, run by proprietor{" "}
+            {SITE.city}, {SITE.state}, founded by{" "}
             <Link href="/proprietor" style={{ color: "var(--rust)" }}>
               {PROPRIETOR.name}
-            </Link>
-            . For {govtYears}+ years we have carried out government printing works — flex
+            </Link>{" "}
+            (Founder &amp; Proprietor) and co-founder {CO_FOUNDER.name}. For {govtYears}+ years we have carried out government printing works — flex
             banners, hoardings, publicity boards, official forms, registers and textbooks — for
             departments, district offices and schools, alongside publishing our own list of books.
           </p>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Clock, Mail, MapPin, Phone, UserRound } from "lucide-react";
-import { PROPRIETOR, SITE } from "../site-config";
+import { CO_FOUNDER, PROPRIETOR, SITE } from "../site-config";
 import { SectionHeading } from "../components/Primitives";
 import { Reveal } from "../components/Motion";
 import ContactForm from "../components/ContactForm";
@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const rows = [
-    { Icon: UserRound, label: "Proprietor", value: PROPRIETOR.name },
+    { Icon: UserRound, label: "Founder & Proprietor", value: PROPRIETOR.name },
+    { Icon: UserRound, label: "Co-Founder", value: CO_FOUNDER.name },
     { Icon: MapPin, label: "Office", value: `${SITE.address.street}, ${SITE.city}, ${SITE.state} – ${SITE.address.postalCode}` },
     { Icon: Phone, label: "Phone", value: SITE.phone, href: `tel:${SITE.phone.replace(/\s/g, "")}` },
     { Icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },

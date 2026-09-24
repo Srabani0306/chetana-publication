@@ -5,10 +5,10 @@ import "./site.css";
 import "./animations.css";
 import SiteHeader from "./components/SiteHeader";
 import { JsonLd } from "./components/Primitives";
-import { NAV, PROPRIETOR, SITE } from "./site-config";
+import { CO_FOUNDER, NAV, PROPRIETOR, SITE } from "./site-config";
 
 const years = new Date().getFullYear() - SITE.govtSince;
-const description = `${SITE.name} (${SITE.alias}), ${SITE.city}, ${SITE.state} — flex printing, banners, hoardings, book publication and government printing works for ${years}+ years. Proprietor: ${PROPRIETOR.name}.`;
+const description = `${SITE.name} (${SITE.alias}), ${SITE.city}, ${SITE.state} — flex printing, banners, hoardings, book publication and government printing works for ${years}+ years. Founder & Proprietor: ${PROPRIETOR.name}. Co-Founder: ${CO_FOUNDER.name}.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -18,11 +18,13 @@ export const metadata: Metadata = {
   },
   description,
   applicationName: SITE.name,
-  authors: [{ name: PROPRIETOR.name }],
+  authors: [{ name: PROPRIETOR.name }, { name: CO_FOUNDER.name }],
   creator: PROPRIETOR.name,
   publisher: SITE.name,
   keywords: [
     PROPRIETOR.name,
+    CO_FOUNDER.name,
+    "Sarojini Mohanty",
     "Ramakrishna Nayak",
     "Rama Krishna Nayak Sundargarh",
     SITE.alias,
@@ -97,7 +99,7 @@ const businessJsonLd = {
       },
       areaServed: { "@type": "State", name: "Odisha" },
       openingHours: "Mo-Sa 10:00-19:00", // keep in sync with SITE.hours
-      founder: { "@id": `${SITE.url}/#proprietor` },
+      founder: [{ "@id": `${SITE.url}/#proprietor` }, { "@id": `${SITE.url}/#cofounder` }],
       knowsAbout: ["Printing","Flex printing", "Government printing works", "Book publication", "Offset printing"],
     },
     {
@@ -115,6 +117,15 @@ const businessJsonLd = {
         addressRegion: SITE.address.region,
         addressCountry: SITE.address.country,
       },
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE.url}/#cofounder`,
+      name: CO_FOUNDER.name,
+      alternateName: "Sarojini Mohanty",
+      jobTitle: `${CO_FOUNDER.role}, ${SITE.name} (${SITE.alias})`,
+      url: `${SITE.url}/proprietor`,
+      worksFor: { "@id": `${SITE.url}/#business` },
     },
     {
       "@type": "WebSite",
@@ -151,7 +162,7 @@ export default function RootLayout({
             <div className="cp-footer-inner">
               <span className="cp-footer-copy">
                 © {new Date().getFullYear()} {SITE.name} ({SITE.alias}), {SITE.address.street},{" "}
-                {SITE.city}, {SITE.state}. Proprietor: {PROPRIETOR.name}.
+                {SITE.city}, {SITE.state}. Founder & Proprietor: {PROPRIETOR.name}. Co-Founder: {CO_FOUNDER.name}.
               </span>
               <nav className="cp-footer-nav" aria-label="Footer">
                 {NAV.map((n) => (

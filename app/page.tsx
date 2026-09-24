@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Landmark, Quote, UserRound } from "lucide-react";
 import { BOOKS } from "./data";
-import { PROPRIETOR, SERVICES, SITE } from "./site-config";
+import { CO_FOUNDER, PROPRIETOR, SERVICES, SITE } from "./site-config";
 import { Eyebrow, SectionHeading } from "./components/Primitives";
 import { CountUp, Reveal } from "./components/Motion";
 import BookGrid from "./components/BookGrid";
@@ -37,7 +37,7 @@ export default function Home() {
             ଚିନ୍ତାର ଚେତନା, ଶବ୍ଦର ଶକ୍ତି
           </p>
           <p className="cp-lead cp-rise" style={{ "--delay": "340ms" } as React.CSSProperties}>
-            {SITE.name} ({SITE.alias}), led by proprietor {PROPRIETOR.name}, has handled
+            {SITE.name} ({SITE.alias}), founded by {PROPRIETOR.name} and {CO_FOUNDER.name}, has handled
             government printing works since {SITE.govtSince} — flex banners, hoardings,
             official forms, registers and textbooks — alongside our own book publication.
           </p>
