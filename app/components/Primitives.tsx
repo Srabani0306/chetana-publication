@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Seal({ size = 56 }: { size?: number }) {
   return (
     <Image
-      src="/logo.png"
+      src="/images/logo/chetana-publications-monogram-cp.png"
       alt="Chetana Publication Logo"
       width={size}
       height={size}
