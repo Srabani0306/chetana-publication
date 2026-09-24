@@ -90,7 +90,7 @@ const businessJsonLd = {
       areaServed: { "@type": "State", name: "Odisha" },
       openingHours: "Mo-Sa 10:00-19:00", // keep in sync with SITE.hours
       founder: { "@id": `${SITE.url}/#proprietor` },
-      knowsAbout: ["Flex printing", "Government printing works", "Book publication", "Offset printing"],
+      knowsAbout: ["Printing","Flex printing", "Government printing works", "Book publication", "Offset printing"],
     },
     {
       "@type": "Person",

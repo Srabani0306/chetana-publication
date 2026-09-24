@@ -8,8 +8,8 @@ export const SITE = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://chetana-publication.vercel.app/",
   name: "Chetana Publication",
   alias: "Saransha",
-  tagline: "Flex Printing, Publication & Government Printing Works",
-  govtSince: 2011,
+  tagline: "Printing , Flex Printing, Publication & Government Printing Works",
+  govtSince: 1990,
   city: "Sundargarh",
   state: "Odisha",
   address: {

@@ -27,7 +27,7 @@ export default function Home() {
             </Eyebrow>
           </div>
           <h1 className="cp-h1 cp-rise" style={{ "--delay": "120ms" } as React.CSSProperties}>
-            Flex printing &amp;
+            Printing &amp;
             <br />
             government works,
             <br />
@@ -43,7 +43,7 @@ export default function Home() {
           </p>
           <div className="cp-hero-actions cp-rise" style={{ "--delay": "460ms" } as React.CSSProperties}>
             <Link className="cp-btn cp-btn-primary" href="/about">
-              Our work &amp; equipment <ArrowRight size={15} strokeWidth={2} />
+              Our workkk &amp; equipment <ArrowRight size={15} strokeWidth={2} />
             </Link>
             <Link className="cp-btn cp-btn-ghost" href="/proprietor">
               <UserRound size={15} strokeWidth={2} /> Meet the proprietor
