@@ -99,7 +99,7 @@ export const EQUIPMENT: Equipment[] = [
   {
     name: "Lamination & Binding Unit",
     type: "Finishing",
-    image: "/images/equipment/lamination-binding.svg",
+    image: "/images/equipment/lamination.png",
     description:
       "Lamination, perfect binding, spiral binding and paper cutting — so every job leaves finished and ready to use.",
     specs: ["Hot & cold lamination", "Perfect & spiral binding", "Hydraulic paper cutting"],
