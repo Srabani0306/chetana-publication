@@ -72,7 +72,7 @@ export default function Home() {
             </div>
             <div className="cp-banner">
               <div className="cp-banner-ink">
-                <span className="cp-banner-kicker">{SITE.alias} Flex Print</span>
+                <span className="cp-banner-kicker">{SITE.name} Print</span>
                 <span className="cp-banner-title">
                   Banners · Hoardings
                   <br />
