@@ -5,7 +5,8 @@
 
 export const SITE = {
   // TODO: replace with your real domain once it is live (or set NEXT_PUBLIC_SITE_URL).
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://chetana-publication.vercel.app/",
+  // No trailing slash — pages build URLs as `${SITE.url}/path`.
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://chetana-publication.vercel.app").replace(/\/+$/, ""),
   name: "Chetana Publication",
   alias: "R.K Nayak",
   tagline: "Printing , Flex Printing, Publication & Government Printing Works",
@@ -19,7 +20,7 @@ export const SITE = {
     postalCode: "770002",
     country: "IN",
   },
-  // TODO: replace with your real phone number and email.
+
   phone: "+91 7978045966",
   email: "rknayak.saransha@gmail.com",
   hours: "Mon–Sat, 10:00–19:00",
@@ -44,7 +45,42 @@ export const PROPRIETOR = {
 export const CO_FOUNDER = {
   name: "Mrs. Sarojini Mohanty",
   role: "Co-Founder",
+  image: "/images/sm.png",
 };
+
+export type TeamMember = {
+  name: string;
+  role: string;
+  /** Optional photo path under /public. Initials are shown when omitted. */
+  image?: string;
+  bio: string;
+};
+
+// TODO: replace the Accountant and Chief IT names/bios with the real people (and add photos if wanted).
+export const TEAM: TeamMember[] = [
+  {
+    name: PROPRIETOR.name,
+    role: "Founder & Proprietor",
+    image: PROPRIETOR.image,
+    bio: `Leads ${SITE.name} and its government printing works, with over ${new Date().getFullYear() - SITE.govtSince} years of experience.`,
+  },
+  {
+    name: CO_FOUNDER.name,
+    role: CO_FOUNDER.role,
+    image: CO_FOUNDER.image,
+    bio: "Works alongside the founder in guiding the press, its publications and its customers.",
+  },
+  {
+    name: "Barsha Basundhara",
+    role: "Accountant",
+    bio: "Looks after billing, accounts and documentation for government and private orders.",
+  },
+  {
+    name: "Srabani Satadala",
+    role: "Chief – IT Department",
+    bio: "Heads the IT department: design systems, digital files, the website and online presence.",
+  },
+];
 
 export type Equipment = {
   name: string;
@@ -125,6 +161,7 @@ export const NAV = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/proprietor", label: "Proprietor" },
+  { href: "/our-team", label: "Our Team" },
   { href: "/books", label: "Books" },
   { href: "/authors", label: "Authors" },
   { href: "/contact", label: "Contact" },
