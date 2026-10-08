@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Landmark, Quote, UserRound } from "lucide-react";
+import { ArrowRight, Code2, Globe, Landmark, Megaphone, Monitor, Quote, UserRound } from "lucide-react";
 import { BOOKS } from "./data";
 import { CO_FOUNDER, PROPRIETOR, SERVICES, SITE } from "./site-config";
 import { Eyebrow, SectionHeading } from "./components/Primitives";
@@ -7,7 +7,19 @@ import { CountUp, Reveal } from "./components/Motion";
 import BookGrid from "./components/BookGrid";
 
 const CMYK = ["var(--cyan)", "var(--magenta)", "var(--yellow)", "var(--ink)"];
+const IT_SERVICES = [
+  { icon: Globe, label: "Website & web app development" },
+  { icon: Code2, label: "Custom software & automation" },
+  { icon: Monitor, label: "Computer & IT training" },
+  { icon: Megaphone, label: "Digital marketing & design" },
+];
 
+const TICKER_ITEMS = [
+  "Introducing our IT Department",
+  "Websites · Software · Training · Digital Marketing",
+  "ଆମେ ଆସୁଛୁ ଏକ ନୂଆ ରୂପରେ",
+  "Launching very soon",
+];
 export default function Home() {
   const govtYears = new Date().getFullYear() - SITE.govtSince;
   const featured = BOOKS.slice(0, 4);
@@ -15,6 +27,26 @@ export default function Home() {
 
   return (
     <div>
+      {/* TOP TICKER */}
+      <div className="cp-ticker" role="region" aria-label="Announcement: IT Department coming soon">
+        <span className="cp-ticker-badge cp-mono">
+          <i className="cp-ticker-dot" /> COMING SOON
+        </span>
+        <div className="cp-ticker-viewport">
+          <div className="cp-ticker-track">
+            {[0, 1].map((copy) => (
+              <div className="cp-ticker-group" key={copy} aria-hidden={copy === 1}>
+                {TICKER_ITEMS.map((t) => (
+                  <span className="cp-ticker-item" key={t}>
+                    {t}
+                    <b className="cp-ticker-sep">✦</b>
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       {/* HERO */}
       <section className="cp-hero">
         <div className="cp-blob" style={{ width: 320, height: 320, background: "var(--magenta)", left: -80, top: 20 }} />
@@ -117,7 +149,56 @@ export default function Home() {
           </div>
         ))}
       </section>
+      {/* IT DEPARTMENT AD */}
+      <Reveal as="section" className="cp-ad">
+        <div className="cp-ad-inner">
+          <div className="cp-ad-badge cp-mono">
+            <span className="cp-ad-dot" /> COMING SOON
+          </div>
 
+          <h2 className="cp-ad-title">
+            Introducing our
+            <br />
+            <span className="cp-h1-accent">IT Department</span>
+          </h2>
+
+          <p className="cp-ad-odia cp-odia">ଆମେ ଆସୁଛୁ ଏକ ନୂଆ ରୂପରେ</p>
+
+          <p className="cp-lead">
+            From print to pixels. {SITE.name} is expanding into technology, bringing the same
+            trust and precision we have shown for {govtYears}+ years to the digital world.
+          </p>
+
+          <ul className="cp-ad-list">
+            {IT_SERVICES.map(({ icon: Icon, label }, i) => (
+              <li key={label}>
+                <span className="cp-ad-icon" style={{ background: CMYK[i % 3] }}>
+                  <Icon size={16} strokeWidth={2} />
+                </span>
+                {label}
+              </li>
+            ))}
+          </ul>
+
+          <div className="cp-hero-actions">
+            <Link className="cp-btn cp-btn-primary" href="/contact">
+              Get notified at launch <ArrowRight size={15} strokeWidth={2} />
+            </Link>
+          </div>
+        </div>
+
+        <div className="cp-ad-art" aria-hidden="true">
+          <div className="cp-ad-window">
+            <div className="cp-ad-window-bar">
+              <i /><i /><i />
+            </div>
+            <div className="cp-ad-window-body cp-mono">
+              <span>&lt;{SITE.alias} /&gt;</span>
+              <span className="cp-ad-cursor">_</span>
+            </div>
+          </div>
+        </div>
+      </Reveal>
       {/* GOVT BAND */}
       <Reveal className="cp-govt-band">
         <div className="cp-govt-big">

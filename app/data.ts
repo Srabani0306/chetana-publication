@@ -23,28 +23,28 @@ export type TimelineItem = { year: string; text: string };
 
 export const BOOKS: Book[] = [
   {
-    code: "CP-014",
-    title: "ସୂର୍ଯ୍ୟମୁଖୀ",
-    sub: "Sunflower — Collected Poems",
-    author: "Anita Mohanty",
+    code: "CP-015",
+    title: "ସନ୍ଦେହୀ ପ୍ରିୟତମା",
+    sub: "Sandehi Priyatama",
+    author: "Sagar Nayak",
     category: "Poetry",
     price: 250,
-    year: 2022,
+    year: 2015,
     govt: false,
     blurb:
-      "A quiet, luminous collection tracing a woman's inner seasons — grief, work, and the small defiant joys of ordinary days.",
+      "A beautiful Odia poetry collection by Sagar Nayak, exploring love, emotions, longing, and the complexities of relationships.",
   },
   {
-    code: "CP-021",
-    title: "The Silent Ledger",
-    sub: "A Novel",
-    author: "Rajiv Patnaik",
-    category: "Fiction",
-    price: 399,
-    year: 2023,
+    code: "CP-016",
+    title: "ମନ ମଧୁଶାଳା",
+    sub: "Mana Madhusala",
+    author: "Gopa Krishana Nayak",
+    category: "Poetry",
+    price: 250,
+    year: 2015,
     govt: false,
     blurb:
-      "A Sundargarh accountant discovers a decades-old discrepancy that unravels his family's history — and his city's.",
+      "A soulful Odia poetry collection exploring emotions, love, memories, and the many shades of the human heart.",
   },
   {
     code: "CP-002",
@@ -122,13 +122,13 @@ export const BOOKS: Book[] = [
 
 export const AUTHORS: Author[] = [
   {
-    name: "Anita Mohanty",
+    name: "Mr. Sagar Nayak",
     role: "Poet",
     since: 2011,
     bio: "Anita writes in the gaps between housework and half-finished tea, and has published three collections with Chetana since 2011.",
   },
   {
-    name: "Rajiv Patnaik",
+    name: "Mr. Gopa Krishna Nayak",
     role: "Novelist",
     since: 2018,
     bio: "A former bank auditor turned full-time writer, Rajiv sets his fiction in the ledgers and back offices of ordinary institutions.",
@@ -161,7 +161,7 @@ export const AUTHORS: Author[] = [
 
 export const TIMELINE: TimelineItem[] = [
   { year: "1990", text: "Chetana Publication founded in Sundargarh with a single printing press and four titles." },
- 
+
   { year: "2010", text: "Digitised our full backlist and opened a public catalogue for schools and libraries." },
   { year: "2011", text: "Began government printing works — forms, registers and publicity material for district offices." },
   { year: "2015", text: "Installed large-format flex printing; now producing banners and hoardings for government schemes." },

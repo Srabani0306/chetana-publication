@@ -155,6 +155,28 @@ export const SERVICES = [
   "Radium Stickers",
   "Lamination",
   "Binding",
+  "Multicolour Offset Printing",
+  "Digital & Offset Printing",
+
+  "LED & Signages",
+
+  "Book Printing",
+  "Textbooks",
+  "Official Forms & Registers",
+  "Certificates",
+  "Visiting Cards",
+  "Badges",
+  "ID Cards",
+  "Invitation Cards",
+   // Products & gifts
+  "Promotional Products",
+  "T-Shirts, Jerseys & Caps",
+  "All Photo Frames",
+  "Trophies & Awards",
+
+  // Finishing
+  "Lamination",
+  "Binding",
 ];
 
 export const NAV = [
