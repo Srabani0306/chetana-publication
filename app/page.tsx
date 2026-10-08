@@ -11,7 +11,7 @@ const IT_SERVICES = [
   { icon: Globe, label: "Website & web app development" },
   { icon: Layout, label: "Website designing" },
   { icon: Smartphone, label: "Mobile application development" },
-  { icon: Code2, label: "Custom software & automation" },
+
   { icon: GraduationCap, label: "Live projects for college students" },
   { icon: Monitor, label: "Computer & IT training" },
   { icon: Megaphone, label: "Digital marketing & design" },
