@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Code2, Globe, Landmark, Megaphone, Monitor, Quote, UserRound } from "lucide-react";
+import { ArrowRight,Layout,Smartphone,GraduationCap, Code2, Globe, Landmark, Megaphone, Monitor, Quote, UserRound } from "lucide-react";
 import { BOOKS } from "./data";
 import { CO_FOUNDER, PROPRIETOR, SERVICES, SITE } from "./site-config";
 import { Eyebrow, SectionHeading } from "./components/Primitives";
@@ -9,11 +9,13 @@ import BookGrid from "./components/BookGrid";
 const CMYK = ["var(--cyan)", "var(--magenta)", "var(--yellow)", "var(--ink)"];
 const IT_SERVICES = [
   { icon: Globe, label: "Website & web app development" },
+  { icon: Layout, label: "Website designing" },
+  { icon: Smartphone, label: "Mobile application development" },
   { icon: Code2, label: "Custom software & automation" },
+  { icon: GraduationCap, label: "Live projects for college students" },
   { icon: Monitor, label: "Computer & IT training" },
   { icon: Megaphone, label: "Digital marketing & design" },
 ];
-
 const TICKER_ITEMS = [
   "Introducing our IT Department",
   "Websites · Software · Training · Digital Marketing",
