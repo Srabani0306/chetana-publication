@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MapPin, Phone, UserRound } from "lucide-react";
+import { Clock, ExternalLink, Mail, MapPin, Phone, UserRound } from "lucide-react";
 import { CO_FOUNDER, PROPRIETOR, SITE } from "../site-config";
 import { SectionHeading } from "../components/Primitives";
 import { Reveal } from "../components/Motion";
-import ContactForm from "../components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -12,6 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const fullAddress = `${SITE.address.street}, ${SITE.city}, ${SITE.state} ${SITE.address.postalCode}`;
+  const mapQuery = encodeURIComponent(`${SITE.name}, ${fullAddress}`);
+  const embedSrc = `https://www.google.com/maps?q=${mapQuery}&z=16&output=embed`;
+  const openSrc = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
+
   const rows = [
     { Icon: UserRound, label: "Founder & Proprietor", value: PROPRIETOR.name },
     { Icon: UserRound, label: "Co-Founder", value: CO_FOUNDER.name },
@@ -36,8 +40,20 @@ export default function ContactPage() {
             </Reveal>
           ))}
         </div>
+
         <Reveal delay={150}>
-          <ContactForm />
+          <div className="cp-map">
+            <iframe
+              title={`Map showing ${SITE.name} at ${fullAddress}`}
+              src={embedSrc}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+            <a className="cp-btn cp-btn-primary cp-map-btn" href={openSrc} target="_blank" rel="noopener noreferrer">
+              Open in Google Maps <ExternalLink size={15} strokeWidth={2} />
+            </a>
+          </div>
         </Reveal>
       </div>
     </div>
