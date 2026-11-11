@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { SITE, TEAM } from "../site-config";
-import { SectionHeading } from "../components/Primitives";
-import { Reveal } from "../components/Motion";
+import { SITE, TEAM } from "../../site-config";
+import { SectionHeading } from "../../components/Primitives";
+import { Reveal } from "../../components/Motion";
 
 export const metadata: Metadata = {
   title: "Our Team",

@@ -1,11 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import Link from "next/link";
 import "./globals.css";
 import "./site.css";
 import "./animations.css";
-import SiteHeader from "./components/SiteHeader";
 import { JsonLd } from "./components/Primitives";
-import { CO_FOUNDER, NAV, PROPRIETOR, SITE } from "./site-config";
+import { CO_FOUNDER, PROPRIETOR, SITE } from "./site-config";
 
 const years = new Date().getFullYear() - SITE.govtSince;
 const description = `${SITE.name} (${SITE.alias}), ${SITE.city}, ${SITE.state} — flex printing, banners, hoardings, book publication and government printing works for ${years}+ years. Founder & Proprietor: ${PROPRIETOR.name}. Co-Founder: ${CO_FOUNDER.name}.`;
@@ -146,6 +144,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        />
         <meta name="google-site-verification" content="5-QNmJtFZYXWkRiRcDefTxtxYDAJ8iwzHBQTdN1g9Qw" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
@@ -155,25 +158,7 @@ export default function RootLayout({
         <JsonLd data={businessJsonLd} />
       </head>
       <body>
-        <div className="cp-root">
-          <SiteHeader />
-          <main>{children}</main>
-          <footer className="cp-footer">
-            <div className="cp-footer-inner">
-              <span className="cp-footer-copy">
-                © {new Date().getFullYear()} {SITE.name} ({SITE.alias}), {SITE.address.street},{" "}
-                {SITE.city}, {SITE.state}. Founder & Proprietor: {PROPRIETOR.name}. Co-Founder: {CO_FOUNDER.name}.
-              </span>
-              <nav className="cp-footer-nav" aria-label="Footer">
-                {NAV.map((n) => (
-                  <Link key={n.href} href={n.href}>
-                    {n.label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </footer>
-        </div>
+        {children}
       </body>
     </html>
   );

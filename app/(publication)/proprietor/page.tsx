@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Briefcase, Clock, Mail, MapPin, Phone, Quote, Users } from "lucide-react";
-import { CO_FOUNDER, PROPRIETOR, SITE } from "../site-config";
-import { Eyebrow } from "../components/Primitives";
-import { Reveal } from "../components/Motion";
+import { CO_FOUNDER, PROPRIETOR, SITE } from "../../site-config";
+import { Eyebrow } from "../../components/Primitives";
+import { Reveal } from "../../components/Motion";
 
 export const metadata: Metadata = {
   title: `${PROPRIETOR.name} — ${PROPRIETOR.role}`,

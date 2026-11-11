@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { SITE } from "./site-config";
+import { IT_SERVICES, SITE } from "./site-config";
+import { IT_PRODUCTS } from "./it/it-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: { path: string; priority: number; changeFrequency: "weekly" | "monthly" }[] = [
@@ -12,7 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/authors", priority: 0.5, changeFrequency: "monthly" },
   ];
 
-  return routes.map((r) => ({
+  const itRoutes = [
+    "/it", "/it/services", "/it/products", "/it/projects", "/it/contact",
+    ...IT_SERVICES.map((s) => `/it/services/${s.slug}`),
+    ...IT_PRODUCTS.map((p) => `/it/products/${p.slug}`),
+  ].map((path) => ({ path, priority: path === "/it" ? 0.9 : 0.7, changeFrequency: "monthly" as const }));
+
+  return [...routes, ...itRoutes].map((r) => ({
     url: `${SITE.url}${r.path}`,
     lastModified: new Date(),
     changeFrequency: r.changeFrequency,

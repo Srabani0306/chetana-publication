@@ -179,9 +179,137 @@ export const SERVICES = [
   "Binding",
 ];
 
+/** Brand of the IT Department mini-site (lives under /it). */
+export const IT_SITE = {
+  name: "Chetana Publication IT Services",
+  short: "IT Services",
+  tagline: "Software, websites, apps & training from Sundargarh, Odisha",
+};
+
+export type PrintService = {
+  name: string;
+  image: string;
+  description: string;
+  tags: string[];
+};
+
+/** Publishing-house services shown on the home page. */
+export const PRINT_SERVICES: PrintService[] = [
+  {
+    name: "Flex Banners & Hoardings",
+    image: "/images/equipment/flex-printer.svg",
+    description: "Weather-resistant large-format prints for shops, events and government publicity boards.",
+    tags: ["Flex banners", "Hoardings", "Publicity boards"],
+  },
+  {
+    name: "Book Publication & Textbooks",
+    image: "/images/equipment/offset-machine.svg",
+    description: "From manuscript to finished book — multi-colour offset printing for publishers, schools and authors.",
+    tags: ["Book printing", "Textbooks", "Offset runs"],
+  },
+  {
+    name: "Forms, Registers & Certificates",
+    image: "/images/equipment/digital-press.svg",
+    description: "Official forms, registers, certificates, ID cards, visiting and invitation cards, fast and sharp.",
+    tags: ["Official forms", "ID cards", "Certificates"],
+  },
+  {
+    name: "Vinyl, Radium & Signage",
+    image: "/images/equipment/cutting-plotter.svg",
+    description: "Precision-cut vinyl lettering, radium stickers, vehicle graphics and LED signage.",
+    tags: ["Vinyl cutting", "Radium stickers", "LED & signage"],
+  },
+  {
+    name: "Indoor Prints & Standees",
+    image: "/images/equipment/eco-solvent-printer.svg",
+    description: "Photo-quality eco-solvent prints for star flex, backlit boards, standees and office branding.",
+    tags: ["Star flex", "Standees", "Backlit"],
+  },
+  {
+    name: "Lamination & Binding",
+    image: "/images/equipment/lamination.png",
+    description: "Hot & cold lamination, perfect and spiral binding and hydraulic cutting — finished in-house.",
+    tags: ["Lamination", "Binding", "Paper cutting"],
+  },
+];
+
+export type ItService = {
+  slug: string;
+  name: string;
+  short: string;
+  image: string;
+  description: string;
+  features: string[];
+};
+
+export const IT_SERVICES: ItService[] = [
+  {
+    slug: "web-development",
+    name: "Website & Web App Development",
+    short: "Websites that work",
+    image: "/images/it/web-development.svg",
+    description:
+      "Fast, secure, mobile-friendly websites and web applications for businesses, schools and government offices.",
+    features: ["Business & institutional websites", "Online order & booking systems", "Admin dashboards & CMS", "Hosting, domain & maintenance"],
+  },
+  {
+    slug: "web-design",
+    name: "Website Designing",
+    short: "Designs that stand out",
+    image: "/images/it/web-design.svg",
+    description:
+      "Clean, modern interfaces and branding that carry the same print-quality polish we are known for.",
+    features: ["UI / UX design", "Logo & brand identity", "Responsive layouts", "Odia & English content support"],
+  },
+  {
+    slug: "mobile-apps",
+    name: "Mobile Application Development",
+    short: "Apps in every pocket",
+    image: "/images/it/mobile-apps.svg",
+    description:
+      "Android and iOS applications built around your workflow — from simple utilities to full customer apps.",
+    features: ["Android & iOS apps", "Cross-platform development", "Push notifications", "App store publishing"],
+  },
+  {
+    slug: "live-projects",
+    name: "Live Projects for College Students",
+    short: "Real experience",
+    image: "/images/it/live-projects.svg",
+    description:
+      "Final-year and internship projects guided by working developers, with real briefs and certification.",
+    features: ["B.Tech / BCA / MCA projects", "Mentor-guided development", "Project report & documentation", "Completion certificate"],
+  },
+  {
+    slug: "it-training",
+    name: "Computer & IT Training",
+    short: "Skills for careers",
+    image: "/images/it/it-training.svg",
+    description:
+      "Practical, hands-on courses for students, job seekers and office staff in a friendly classroom setting.",
+    features: ["MS Office, Tally & typing", "Web & programming basics", "Hands-on lab practice", "Certificates on completion"],
+  },
+  {
+    slug: "digital-marketing",
+    name: "Digital Marketing & Design",
+    short: "Be found online",
+    image: "/images/it/digital-marketing.svg",
+    description:
+      "Social media, Google presence and creative design to help local businesses reach more customers.",
+    features: ["Social media management", "Google Business & SEO", "Posters, creatives & reels", "Print + digital campaigns"],
+  },
+];
+
+export const IT_PROCESS = [
+  { step: "01", title: "Discuss", text: "Tell us what you need — a call or a visit to our Sundargarh office." },
+  { step: "02", title: "Plan & Design", text: "We share scope, timeline, cost and a design preview." },
+  { step: "03", title: "Build", text: "Our IT team develops it with regular progress updates." },
+  { step: "04", title: "Launch & Support", text: "Go live with training, and ongoing maintenance." },
+];
+
 export const NAV = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
+  { href: "/it", label: "IT Department" },
   { href: "/proprietor", label: "Proprietor" },
   { href: "/our-team", label: "Our Team" },
   { href: "/books", label: "Books" },

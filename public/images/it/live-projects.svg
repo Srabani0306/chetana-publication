@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6EFDD"/>
+  <circle cx="340" cy="50" r="60" fill="#E3B32A" opacity=".3"/>
+  <circle cx="50" cy="260" r="60" fill="#1C8FB8" opacity=".15"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="4s" repeatCount="indefinite"/>
+    <path d="M200 40 L330 90 L200 140 L70 90Z" fill="#2A1F14"/>
+    <path d="M120 118 v50 q80 40 160 0 v-50 L200 150Z" fill="#C2327A"/>
+    <path d="M330 90 v60" stroke="#E3B32A" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="330" cy="156" r="8" fill="#E3B32A"/>
+  </g>
+  <rect x="80" y="220" width="240" height="56" rx="8" fill="#fff" stroke="#2A1F14" stroke-width="3"/>
+  <rect x="96" y="234" width="208" height="10" rx="5" fill="#2A1F14" opacity=".15"/>
+  <rect x="96" y="234" width="0" height="10" rx="5" fill="#1C8FB8">
+    <animate attributeName="width" values="0;208;208;0" keyTimes="0;.7;.9;1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="96" y="266" font-family="monospace" font-size="12" fill="#2A1F14">real project · real client</text>
+</svg>

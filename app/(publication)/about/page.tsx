@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Landmark, Printer, Users } from "lucide-react";
-import { TIMELINE } from "../data";
-import { CO_FOUNDER, EQUIPMENT, PROPRIETOR, SITE } from "../site-config";
-import { JsonLd, SectionHeading } from "../components/Primitives";
-import { Reveal } from "../components/Motion";
+import { TIMELINE } from "../../data";
+import { CO_FOUNDER, EQUIPMENT, PROPRIETOR, SITE } from "../../site-config";
+import { JsonLd, SectionHeading } from "../../components/Primitives";
+import { Reveal } from "../../components/Motion";
 
 export const metadata: Metadata = {
   title: "About Us & Our Equipment",

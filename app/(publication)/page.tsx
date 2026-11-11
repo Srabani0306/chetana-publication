@@ -1,26 +1,19 @@
 import Link from "next/link";
-import { ArrowRight,Layout,Smartphone,GraduationCap, Code2, Globe, Landmark, Megaphone, Monitor, Quote, UserRound } from "lucide-react";
-import { BOOKS } from "./data";
-import { CO_FOUNDER, PROPRIETOR, SERVICES, SITE } from "./site-config";
-import { Eyebrow, SectionHeading } from "./components/Primitives";
-import { CountUp, Reveal } from "./components/Motion";
-import BookGrid from "./components/BookGrid";
+import Image from "next/image";
+import { ArrowRight, Landmark, Quote, UserRound } from "lucide-react";
+import { BOOKS } from "../data";
+import { CO_FOUNDER, IT_SERVICES, PRINT_SERVICES, PROPRIETOR, SERVICES, SITE } from "../site-config";
+import { Eyebrow, SectionHeading } from "../components/Primitives";
+import { CountUp, Reveal } from "../components/Motion";
+import BookGrid from "../components/BookGrid";
+import ItServiceCard from "../components/ItServiceCard";
 
 const CMYK = ["var(--cyan)", "var(--magenta)", "var(--yellow)", "var(--ink)"];
-const IT_SERVICES = [
-  { icon: Globe, label: "Website & web app development" },
-  { icon: Layout, label: "Website designing" },
-  { icon: Smartphone, label: "Mobile application development" },
-
-  { icon: GraduationCap, label: "Live projects for college students" },
-  { icon: Monitor, label: "Computer & IT training" },
-  { icon: Megaphone, label: "Digital marketing & design" },
-];
 const TICKER_ITEMS = [
-  "Introducing our IT Department",
-  "Websites · Software · Training · Digital Marketing",
-  "ଆମେ ଆସୁଛୁ ଏକ ନୂଆ ରୂପରେ",
-  "Launching very soon",
+  "Our IT Department is now open",
+  "Websites · Apps · Training · Digital Marketing",
+  "ଆମେ ଏବେ ଡିଜିଟାଲ ଦୁନିଆରେ",
+  "Live projects for college students",
 ];
 export default function Home() {
   const govtYears = new Date().getFullYear() - SITE.govtSince;
@@ -30,10 +23,10 @@ export default function Home() {
   return (
     <div>
       {/* TOP TICKER */}
-      <div className="cp-ticker" role="region" aria-label="Announcement: IT Department coming soon">
-        <span className="cp-ticker-badge cp-mono">
-          <i className="cp-ticker-dot" /> COMING SOON
-        </span>
+      <div className="cp-ticker" role="region" aria-label="Announcement: IT Department now open">
+        <Link href="/it" className="cp-ticker-badge cp-mono" style={{ textDecoration: "none" }}>
+          <i className="cp-ticker-dot" /> NOW OPEN
+        </Link>
         <div className="cp-ticker-viewport">
           <div className="cp-ticker-track">
             {[0, 1].map((copy) => (
@@ -151,40 +144,71 @@ export default function Home() {
           </div>
         ))}
       </section>
-      {/* IT DEPARTMENT AD */}
+      {/* PUBLISHING HOUSE SERVICES */}
+      <section className="cp-section" id="services">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Printing & publishing"
+            title="What we print and publish"
+            sub="Flex, offset, digital and finishing — everything under one roof in Sundargarh."
+          />
+        </Reveal>
+        <div className="cp-equip-grid">
+          {PRINT_SERVICES.map((s, i) => (
+            <Reveal key={s.name} delay={(i % 3) * 110} className="cp-card cp-equip-card">
+              <div className="cp-equip-img">
+                <Image
+                  src={s.image}
+                  alt={`${s.name} at ${SITE.name} (${SITE.alias}), ${SITE.city}`}
+                  fill
+                  sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 380px"
+                />
+              </div>
+              <div className="cp-equip-body">
+                <h3>{s.name}</h3>
+                <p>{s.description}</p>
+                <ul className="cp-equip-specs">
+                  {s.tags.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <div className="cp-center-link">
+          <Link className="cp-inline-link cp-inline-link-lg" href="/about#equipment">
+            See our machines <ArrowRight size={15} strokeWidth={2} />
+          </Link>
+        </div>
+      </section>
+
+      {/* IT DEPARTMENT */}
       <Reveal as="section" className="cp-ad">
         <div className="cp-ad-inner">
           <div className="cp-ad-badge cp-mono">
-            <span className="cp-ad-dot" /> COMING SOON
+            <span className="cp-ad-dot" /> NOW OPEN
           </div>
 
           <h2 className="cp-ad-title">
-            Introducing our
+            Chetana Publication
             <br />
-            <span className="cp-h1-accent">IT Department</span>
+            <span className="cp-h1-accent">IT Services</span>
           </h2>
 
-          <p className="cp-ad-odia cp-odia">ଆମେ ଆସୁଛୁ ଏକ ନୂଆ ରୂପରେ</p>
+          <p className="cp-ad-odia cp-odia">ଆମେ ଏବେ ଡିଜିଟାଲ ଦୁନିଆରେ</p>
 
           <p className="cp-lead">
-            From print to pixels. {SITE.name} is expanding into technology, bringing the same
+            From print to pixels. {SITE.name} now offers technology services, bringing the same
             trust and precision we have shown for {govtYears}+ years to the digital world.
           </p>
 
-          <ul className="cp-ad-list">
-            {IT_SERVICES.map(({ icon: Icon, label }, i) => (
-              <li key={label}>
-                <span className="cp-ad-icon" style={{ background: CMYK[i % 3] }}>
-                  <Icon size={16} strokeWidth={2} />
-                </span>
-                {label}
-              </li>
-            ))}
-          </ul>
-
           <div className="cp-hero-actions">
-            <Link className="cp-btn cp-btn-primary" href="/contact">
-              Get notified at launch <ArrowRight size={15} strokeWidth={2} />
+            <Link className="cp-btn cp-btn-primary" href="/it">
+              Visit IT Department <ArrowRight size={15} strokeWidth={2} />
+            </Link>
+            <Link className="cp-btn cp-btn-ghost" href="/it/products">
+              View software products
             </Link>
           </div>
         </div>
@@ -201,6 +225,27 @@ export default function Home() {
           </div>
         </div>
       </Reveal>
+
+      {/* IT SERVICES */}
+      <section className="cp-section">
+        <Reveal>
+          <SectionHeading
+            eyebrow="IT Department"
+            title="Technology services, under one roof"
+            sub="Websites, apps, training and digital marketing — from the team you already trust."
+          />
+        </Reveal>
+        <div className="cp-equip-grid">
+          {IT_SERVICES.map((s, i) => (
+            <ItServiceCard key={s.slug} service={s} index={i} showFeatures={false} />
+          ))}
+        </div>
+        <div className="cp-center-link">
+          <Link className="cp-inline-link cp-inline-link-lg" href="/it/services">
+            See all IT services <ArrowRight size={15} strokeWidth={2} />
+          </Link>
+        </div>
+      </section>
       {/* GOVT BAND */}
       <Reveal className="cp-govt-band">
         <div className="cp-govt-big">

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Clock, ExternalLink, Mail, MapPin, Phone, UserRound } from "lucide-react";
-import { CO_FOUNDER, PROPRIETOR, SITE } from "../site-config";
-import { SectionHeading } from "../components/Primitives";
-import { Reveal } from "../components/Motion";
+import { CO_FOUNDER, PROPRIETOR, SITE } from "../../site-config";
+import { SectionHeading } from "../../components/Primitives";
+import { Reveal } from "../../components/Motion";
 
 export const metadata: Metadata = {
   title: "Contact",

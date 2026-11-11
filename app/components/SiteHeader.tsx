@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { NAV, SITE } from "../site-config";
 import { Seal } from "./Primitives";
 
@@ -40,9 +40,9 @@ export default function SiteHeader() {
             <Link
               key={n.href}
               href={n.href}
-              className={`cp-nav-link ${isActive(n.href) ? "cp-nav-link-active" : ""}`}
+              className={`cp-nav-link ${isActive(n.href) ? "cp-nav-link-active" : ""} ${n.href === "/it" ? "cp-nav-it" : ""}`}
             >
-              {n.label}
+              {n.label}{n.href === "/it" && <ArrowUpRight size={13} />}
             </Link>
           ))}
         </nav>

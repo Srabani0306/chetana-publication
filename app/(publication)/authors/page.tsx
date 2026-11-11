@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { AUTHORS } from "../data";
-import { SITE } from "../site-config";
-import { SectionHeading } from "../components/Primitives";
-import { Reveal } from "../components/Motion";
+import { AUTHORS } from "../../data";
+import { SITE } from "../../site-config";
+import { SectionHeading } from "../../components/Primitives";
+import { Reveal } from "../../components/Motion";
 
 export const metadata: Metadata = {
   title: "Our Authors",

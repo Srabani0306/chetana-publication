@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6EFDD"/>
+  <circle cx="340" cy="60" r="60" fill="#C2327A" opacity=".15"/>
+  <circle cx="60" cy="250" r="60" fill="#E3B32A" opacity=".25"/>
+  <rect x="50" y="40" width="210" height="190" rx="8" fill="#fff" stroke="#2A1F14" stroke-width="3"/>
+  <path d="M70 200 H245 M70 160 H245 M70 120 H245" stroke="#2A1F14" stroke-opacity=".12" stroke-width="2"/>
+  <g fill="#1C8FB8">
+    <rect x="80" y="170" width="28" height="30"><animate attributeName="height" values="10;30;10" dur="4s" repeatCount="indefinite"/><animate attributeName="y" values="190;170;190" dur="4s" repeatCount="indefinite"/></rect>
+    <rect x="124" y="150" width="28" height="50" fill="#E3B32A"><animate attributeName="height" values="30;60;30" dur="4s" begin=".3s" repeatCount="indefinite"/><animate attributeName="y" values="170;140;170" dur="4s" begin=".3s" repeatCount="indefinite"/></rect>
+    <rect x="168" y="120" width="28" height="80" fill="#C2327A"><animate attributeName="height" values="50;90;50" dur="4s" begin=".6s" repeatCount="indefinite"/><animate attributeName="y" values="150;110;150" dur="4s" begin=".6s" repeatCount="indefinite"/></rect>
+    <rect x="212" y="90" width="28" height="110" fill="#1C8FB8"><animate attributeName="height" values="70;120;70" dur="4s" begin=".9s" repeatCount="indefinite"/><animate attributeName="y" values="130;80;130" dur="4s" begin=".9s" repeatCount="indefinite"/></rect>
+  </g>
+  <path d="M70 70 L130 90 L180 66 L240 56" stroke="#2A1F14" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-8 320 160;8 320 160;-8 320 160" dur="2.5s" repeatCount="indefinite"/>
+    <path d="M280 130 l70 -34 v110 l-70 -34z" fill="#2A1F14"/>
+    <rect x="262" y="130" width="28" height="42" rx="6" fill="#C2327A"/>
+    <path d="M300 172 l12 40 h-18 l-10 -40z" fill="#C2327A"/>
+  </g>
+</svg>

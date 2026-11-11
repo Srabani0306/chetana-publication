@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6EFDD"/>
+  <circle cx="60" cy="60" r="55" fill="#1C8FB8" opacity=".18"/>
+  <circle cx="350" cy="250" r="65" fill="#C2327A" opacity=".15"/>
+  <rect x="70" y="40" width="260" height="165" rx="8" fill="#2A1F14"/>
+  <rect x="82" y="52" width="236" height="141" rx="4" fill="#12202B"/>
+  <g font-family="monospace" font-size="13">
+    <text x="96" y="80" fill="#E3B32A">$ learn --course</text>
+    <text x="96" y="104" fill="#1C8FB8">&gt; MS Office</text>
+    <text x="96" y="124" fill="#C2327A">&gt; Tally &amp; Accounts</text>
+    <text x="96" y="144" fill="#F6EFDD">&gt; Typing · Internet</text>
+    <text x="96" y="170" fill="#E3B32A">&gt; Programming</text>
+    <rect x="200" y="160" width="8" height="14" fill="#E3B32A"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+  </g>
+  <path d="M50 232 h300 l-24 -27 h-252z" fill="#fff" stroke="#2A1F14" stroke-width="3"/>
+  <rect x="170" y="216" width="60" height="6" rx="3" fill="#2A1F14" opacity=".3"/>
+  <rect x="50" y="232" width="300" height="12" rx="4" fill="#2A1F14"/>
+</svg>

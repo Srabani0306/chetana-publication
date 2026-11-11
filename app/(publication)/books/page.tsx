@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { SITE } from "../site-config";
-import { SectionHeading } from "../components/Primitives";
-import BooksCatalog from "../components/BooksCatalog";
+import { SITE } from "../../site-config";
+import { SectionHeading } from "../../components/Primitives";
+import BooksCatalog from "../../components/BooksCatalog";
 
 export const metadata: Metadata = {
   title: "Books Catalogue",

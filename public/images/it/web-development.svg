@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6EFDD"/>
+  <circle cx="60" cy="250" r="70" fill="#1C8FB8" opacity=".15"/>
+  <circle cx="350" cy="40" r="55" fill="#C2327A" opacity=".15"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="5s" repeatCount="indefinite"/>
+    <rect x="60" y="50" width="280" height="190" rx="10" fill="#fff" stroke="#2A1F14" stroke-width="3"/>
+    <rect x="60" y="50" width="280" height="30" rx="10" fill="#2A1F14"/>
+    <circle cx="80" cy="65" r="5" fill="#C2327A"/><circle cx="96" cy="65" r="5" fill="#E3B32A"/><circle cx="112" cy="65" r="5" fill="#1C8FB8"/>
+    <rect x="140" y="58" width="170" height="14" rx="7" fill="#F6EFDD" opacity=".25"/>
+    <rect x="78" y="98" width="120" height="14" rx="4" fill="#C2327A"/>
+    <rect x="78" y="122" width="190" height="8" rx="4" fill="#2A1F14" opacity=".25"/>
+    <rect x="78" y="138" width="160" height="8" rx="4" fill="#2A1F14" opacity=".25"/>
+    <rect x="78" y="164" width="76" height="62" rx="6" fill="#1C8FB8"/>
+    <rect x="164" y="164" width="76" height="62" rx="6" fill="#E3B32A"/>
+    <rect x="250" y="164" width="76" height="62" rx="6" fill="#C2327A"/>
+    <rect x="218" y="98" width="108" height="48" rx="6" fill="#2A1F14"/>
+    <text x="230" y="118" font-family="monospace" font-size="13" fill="#E3B32A">&lt;/&gt;</text>
+    <rect x="262" y="128" width="2" height="12" fill="#F6EFDD"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+  </g>
+</svg>
