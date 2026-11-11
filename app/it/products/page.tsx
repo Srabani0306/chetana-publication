@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { IT_SITE } from "../../site-config";
 import { IT_PRODUCTS } from "../it-data";
 import { CtaBand, ProductCard } from "../ItBits";
 
 export const metadata: Metadata = {
   title: "Software Products",
-  description: "Store & inventory, HRMS, library, laboratory, nursing home, school & college ERP and printing press management software from Chetana Publication IT Services.",
+  description: `Store & inventory, HRMS, library, laboratory, nursing home, school & college ERP and printing press management software from ${IT_SITE.name} in Sundargarh, Odisha.`,
   alternates: { canonical: "/it/products" },
 };
 

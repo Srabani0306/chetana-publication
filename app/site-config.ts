@@ -7,9 +7,9 @@ export const SITE = {
   // TODO: replace with your real domain once it is live (or set NEXT_PUBLIC_SITE_URL).
   // No trailing slash — pages build URLs as `${SITE.url}/path`.
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://chetana-publication.vercel.app").replace(/\/+$/, ""),
-  name: "Chetana Publication",
+  name: "Chetana Publication & IT",
   alias: "R.K Nayak",
-  tagline: "Printing , Flex Printing, Publication & Government Printing Works",
+  tagline: "Printing, publishing, software and IT services in Sundargarh, Odisha",
   govtSince: 1990,
   city: "Sundargarh",
   state: "Odisha",
@@ -181,9 +181,9 @@ export const SERVICES = [
 
 /** Brand of the IT Department mini-site (lives under /it). */
 export const IT_SITE = {
-  name: "Chetana Publication IT Services",
+  name: "Chetana Publication & IT Services",
   short: "IT Services",
-  tagline: "Software, websites, apps & training from Sundargarh, Odisha",
+  tagline: "Software, website and app development in Sundargarh, Odisha",
 };
 
 export type PrintService = {

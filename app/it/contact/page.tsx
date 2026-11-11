@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { SITE } from "../../site-config";
+import { IT_SITE, SITE } from "../../site-config";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Contact Chetana Publication IT Services, ${SITE.address.street}, ${SITE.city}, ${SITE.state}.`,
+  description: `Contact ${IT_SITE.name}, ${SITE.address.street}, ${SITE.city}, ${SITE.state}.`,
   alternates: { canonical: "/it/contact" },
 };
 

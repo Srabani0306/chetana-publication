@@ -191,7 +191,7 @@ export default function Home() {
           </div>
 
           <h2 className="cp-ad-title">
-            Chetana Publication
+            Chetana Publication &amp; IT
             <br />
             <span className="cp-h1-accent">IT Services</span>
           </h2>

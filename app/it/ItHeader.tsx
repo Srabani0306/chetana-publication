@@ -19,7 +19,7 @@ export default function ItHeader() {
           <span className="it-brand-mark">CP</span>
           <span className="it-brand-text">
             <strong>{SITE.name}</strong>
-            <span>{IT_SITE.short}</span>
+            <span>Software · Web · {IT_SITE.short}</span>
           </span>
         </Link>
 

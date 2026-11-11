@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { IT_SITE, SITE } from "../../site-config";
 import { CtaBand, ProjectRows } from "../ItBits";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Websites and management systems built and in development at Chetana Publication IT Services.",
+  description: `Websites and management systems built and in development by ${IT_SITE.name} in ${SITE.city}, Odisha.`,
   alternates: { canonical: "/it/projects" },
 };
 

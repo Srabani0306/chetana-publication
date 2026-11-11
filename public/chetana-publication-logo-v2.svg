@@ -1,5 +1,5 @@
 <svg width="588" height="454" viewBox="0 0 588 454" xmlns="http://www.w3.org/2000/svg">
-  <!-- CHETANA PUBLICATION — refined logo -->
+  <!-- CHETANA PUBLICATION & IT — refined logo -->
   <!-- Transparent background (no grid/texture) -->
 
   <defs>
@@ -55,4 +55,12 @@
         fill="url(#gold)"
         stroke="url(#gold)"
         stroke-width="0.8">PUBLICATION</text>
+
+  <text x="294" y="410"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="22"
+        font-weight="700"
+        letter-spacing="6"
+        fill="url(#gold)">&amp; IT</text>
 </svg>
