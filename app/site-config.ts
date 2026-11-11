@@ -9,7 +9,7 @@ export const SITE = {
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://chetana-publication.vercel.app").replace(/\/+$/, ""),
   name: "Chetana Publication & IT",
   alias: "R.K Nayak",
-  tagline: "Printing, publishing, software and IT services in Sundargarh, Odisha",
+  tagline: "All Type of Printing, publishing, software and IT services in Sundargarh, Odisha",
   govtSince: 1990,
   city: "Sundargarh",
   state: "Odisha",
