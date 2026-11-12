@@ -71,7 +71,7 @@ const businessJsonLd = {
         addressCountry: SITE.address.country,
       },
       // Approximate town-centre coordinates for Sundargarh — replace with the exact pin from Google Maps.
-      geo: { "@type": "GeoCoordinates", latitude: 22.1167, longitude: 84.0333 },
+      geo: { "@type": "GeoCoordinates", latitude: 22.1210558, longitude: 84.01716327199982 },
       hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${SITE.name}, ${SITE.address.street}, ${SITE.city}`)}`,
       areaServed: [
         { "@type": "City", name: "Sundargarh" },
