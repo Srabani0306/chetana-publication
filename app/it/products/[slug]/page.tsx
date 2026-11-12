@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Check } from "lucide-react";
 import { IT_PRODUCTS } from "../../it-data";
 import { CtaBand } from "../../ItBits";
+import { JsonLd } from "../../../components/Primitives";
+import { breadcrumbJsonLd } from "../../../seo";
+import { SITE } from "../../../site-config";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -26,6 +29,26 @@ export default async function ProductDetail({ params }: Props) {
 
   return (
     <div className="it-wrap">
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: p.name,
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description: `${p.tagline} ${p.description}`,
+            url: `${SITE.url}/it/products/${p.slug}`,
+            author: { "@id": `${SITE.url}/#it` },
+            publisher: { "@id": `${SITE.url}/#it` },
+          },
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Software Products", path: "/it/products" },
+            { name: p.name, path: `/it/products/${p.slug}` },
+          ]),
+        ]}
+      />
       <section className="it-hero">
         <Link href="/it/products" className="it-crumb">
           <ArrowLeft size={14} /> All products

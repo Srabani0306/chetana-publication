@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Landmark, Quote, UserRound } from "lucide-react";
@@ -7,6 +8,14 @@ import { Eyebrow, SectionHeading } from "../components/Primitives";
 import { CountUp, Reveal } from "../components/Motion";
 import BookGrid from "../components/BookGrid";
 import ItServiceCard from "../components/ItServiceCard";
+import FaqSection from "../components/FaqSection";
+import { PRINT_FAQ } from "../seo";
+
+export const metadata: Metadata = {
+  title: { absolute: `Best Printing Press in Sundargarh & Odisha | Flex Printing, Book Publishing — ${SITE.name} (${SITE.alias})` },
+  description: `${SITE.name} (${SITE.alias}) — top printing press in Sundargarh, Odisha: flex printing, hoardings, offset printing, book publication & government printing works since ${SITE.govtSince}. Founder ${PROPRIETOR.name}, Co-Founder ${CO_FOUNDER.name}. Call ${SITE.phone}.`,
+  alternates: { canonical: "/" },
+};
 
 const CMYK = ["var(--cyan)", "var(--magenta)", "var(--yellow)", "var(--ink)"];
 const TICKER_ITEMS = [
@@ -326,6 +335,8 @@ export default function Home() {
           — {PROPRIETOR.name}, {PROPRIETOR.role}
         </Link>
       </Reveal>
+
+      <FaqSection title="Printing press in Sundargarh, Odisha — common questions" faqs={PRINT_FAQ} />
     </div>
   );
 }

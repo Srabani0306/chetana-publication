@@ -4,6 +4,7 @@ import "./it.css";
 import ItHeader from "./ItHeader";
 import { IT_SITE, SITE } from "../site-config";
 import { IT_NAV } from "./it-data";
+import { IT_KEYWORDS } from "../seo";
 
 export const metadata: Metadata = {
   title: {
@@ -11,7 +12,16 @@ export const metadata: Metadata = {
     template: `%s | ${IT_SITE.name}`,
   },
   description: `${IT_SITE.name} — website & app development, ERP and management software (HRMS, inventory, library, laboratory, nursing home, school & college), IT training and digital marketing in ${SITE.city}, ${SITE.state}.`,
+  keywords: IT_KEYWORDS,
   alternates: { canonical: "/it" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    siteName: IT_SITE.name,
+    title: `${IT_SITE.name} — Software Company in ${SITE.city}, ${SITE.state}`,
+    description: `Website, mobile app and ERP software development, IT training and digital marketing in ${SITE.city}, ${SITE.state}.`,
+    images: [{ url: "/images/logo/chetana-publications-monogram-cp.png", alt: `${IT_SITE.name} logo` }],
+  },
 };
 
 export default function ItLayout({ children }: Readonly<{ children: React.ReactNode }>) {

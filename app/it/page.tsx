@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Boxes, HeartPulse, Smartphone, Globe, GraduationCap } from "lucide-react";
 import { IT_PROCESS, IT_SERVICES, IT_SITE, SITE } from "../site-config";
 import { CountUp, Reveal } from "../components/Motion";
 import { IT_PRODUCTS } from "./it-data";
 import { CtaBand, ProductCard, ProjectRows, SectionHead, ServiceRow } from "./ItBits";
+
+import FaqSection from "../components/FaqSection";
+import { IT_FAQ, IT_KEYWORDS } from "../seo";
+
+export const metadata: Metadata = {
+  title: { absolute: `Best Software Company in Sundargarh & Odisha | IT Company — ${IT_SITE.name}` },
+  description: `${IT_SITE.name} — software company in Sundargarh, Odisha: website & mobile app development, ERP (school, college, HRMS, inventory, hospital), IT training, live projects and digital marketing. Call ${SITE.phone}.`,
+  keywords: IT_KEYWORDS,
+  alternates: { canonical: "/it" },
+};
 
 export default function ItHome() {
   return (
@@ -104,6 +115,8 @@ export default function ItHome() {
           ))}
         </div>
       </section>
+
+      <FaqSection title="Software company in Sundargarh, Odisha — common questions" faqs={IT_FAQ} />
 
       <CtaBand />
     </div>

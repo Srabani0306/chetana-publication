@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Check } from "lucide-react";
 import { IT_SERVICES, SITE } from "../../../site-config";
 import { CtaBand } from "../../ItBits";
+import { JsonLd } from "../../../components/Primitives";
+import { breadcrumbJsonLd } from "../../../seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -26,6 +28,25 @@ export default async function ServiceDetail({ params }: Props) {
 
   return (
     <div className="it-wrap">
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: s.name,
+            description: s.description,
+            serviceType: s.name,
+            url: `${SITE.url}/it/services/${s.slug}`,
+            provider: { "@id": `${SITE.url}/#it` },
+            areaServed: [{ "@type": "AdministrativeArea", name: "Sundargarh" }, { "@type": "State", name: "Odisha" }],
+          },
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "IT Services", path: "/it" },
+            { name: s.name, path: `/it/services/${s.slug}` },
+          ]),
+        ]}
+      />
       <section className="it-hero">
         <Link href="/it/services" className="it-crumb">
           <ArrowLeft size={14} /> All services
