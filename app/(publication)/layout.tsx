@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
+import VisitorCount from "../components/VisitorCount";
 import { CO_FOUNDER, NAV, PROPRIETOR, SITE } from "../site-config";
 
 export default function PublicationLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -13,6 +14,7 @@ export default function PublicationLayout({ children }: Readonly<{ children: Rea
             © {new Date().getFullYear()} {SITE.name} ({SITE.alias}), {SITE.address.street}, {SITE.city},{" "}
             {SITE.state}. Founder & Proprietor: {PROPRIETOR.name}. Co-Founder: {CO_FOUNDER.name}.
           </span>
+          <VisitorCount />
           <nav className="cp-footer-nav" aria-label="Footer">
             {NAV.map((n) => (
               <Link key={n.href} href={n.href}>

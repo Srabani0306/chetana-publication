@@ -207,3 +207,4 @@
 .seo-faq details { border-bottom: 1px solid rgba(128,128,128,.3); padding: 14px 0; }
 .seo-faq summary { cursor: pointer; font-weight: 600; }
 .seo-faq p { margin: 10px 0 0; line-height: 1.65; opacity: .85; }
+.cp-visitors { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-soft); }
