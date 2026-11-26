@@ -168,6 +168,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
         />
         <meta name="google-site-verification" content="5-QNmJtFZYXWkRiRcDefTxtxYDAJ8iwzHBQTdN1g9Qw" />
+        <meta name="google-site-verification" content="WVG3A4f1xrlNDSWOEAOK2jz-TInls3SzqU2ReXzCgNU" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
